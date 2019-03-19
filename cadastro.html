@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Locadora - cadastrar</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	</head>
+
+	<body>
+
+		<!-- Inicio formulário -->
+		<form>
+			<h2>Cadastro de usuários</h2>
+
+			<div>
+				<label for="nome">Nome:</label>
+				<input type="text" name="nome" id="nome">
+			</div>
+
+			<div>
+				<label for="endereco">Endereço:</label>
+				<input type="text" name="endereco" id="endereco">
+			</div>
+
+			<div>
+				<label for="email">E-mail:</label>
+				<input type="text" name="email" id="email">
+			</div>
+
+			<div>
+				<label for="cidade">Cidade:</label>
+				<input type="text" name="cidade" id="cidade">
+			</div>
+
+			<div>
+				Estado:
+				<select>
+					  <option value="saopaulo">São Paulo</option>
+					  <option value="minasgerais">Minas Gerais</option>
+					  <option value="riodejaneiro">Rio de Janeiro</option>
+					  <option value="brasilia">Brasília</option>
+				</select>
+			</div>
+
+			<div>
+				Sexo:
+				<label>
+					<input class="radio" type="radio" name="masculino" id="masculino" checked>Masculino
+				</label>
+
+				<label>
+					<input class="radio" type="radio" name="feminino" id="feminino">Feminino
+				</label>
+			</div>
+				
+			<div>
+				Filmes que você mais gosta:
+				<br>
+				<input type="checkbox" name="acao" value="acao" id="checkbox_acao" checked>
+				<label for="checkbox_acao">Ação</label>
+				<br>
+				<input type="checkbox" name="aventura" value="aventura" id="checkbox_aventura">
+				<label for="checkbox_aventura">Aventura</label>
+				<br>
+				<input type="checkbox" name="comedia" value="comedia" id="checkbox_comedia">
+				<label for="checkbox_comedia">Comedia</label>
+				<br>
+				<input type="checkbox" name="suspense" value="suspense" id="checkbox_suspense">
+				<label for="checkbox_suspense">Suspense</label>
+				<br>
+				<input type="checkbox" name="drama" value="drama" id="checkbox_drama">
+				<label for="checkbox_drama">Drama</label>
+				<br>
+				<input type="checkbox" name="romance" value="romance" id="checkbox_romance">
+				<label for="checkbox_romance">Romance</label>
+				<br>
+				<input type="checkbox" name="terror" value="terror" id="checkbox_terror">
+				<label for="checkbox_terror">Terror</label>
+
+			</div>
+
+			<div>
+				<label for="usuario">Usuário:</label>
+				<input type="usuario" name="usuario" value="usuario" id="usuario">
+			</div>
+
+			<div>
+				<label for="senha">Senha:</label>
+				<input type="password" name="senha" value="senha" id="senha">
+			</div>
+
+			<div>
+				<br>
+				<input type="reset" value="Cancelar">
+				<input type="submit" value="Enviar">
+			</div>
+
+		</form><!-- Fim formulário -->
+	</body>
+</html>
