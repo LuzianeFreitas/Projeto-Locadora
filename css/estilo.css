@@ -1,6 +1,15 @@
-/*
-Formatação link botão
-*/
+/* Formatação link botão */
+*, :after, :before {
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", "Roboto";
+}
+
+body{
+	width: 100%;
+	height:auto;
+}
 
 a{
 	text-decoration: none;
@@ -8,4 +17,95 @@ a{
 #botoes a{
 	text-decoration: none;
 	color: black;
+}
+
+.container{
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+}
+@media only screen and (min-width: 1200px) {
+	.container {
+	    width: 1170px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+/*  CSS Grid */
+.wrapper{
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: auto auto;
+}
+
+.col-1{
+	grid-column: span 1;
+}
+.col-2{
+	grid-column: span 2;
+}
+.col-3{
+	grid-column: span 3;
+}
+.col-4{
+	grid-column: span 4;
+}
+.col-5{
+	grid-column: span 5;
+}
+.col-6{
+	grid-column: span 6;
+}
+.col-7{
+	grid-column: span 7;
+}
+.col-8{
+	grid-column: span 8;
+}
+.col-9{
+	grid-column: span 9;
+}
+.col-10{
+	grid-column: span 10;
+}
+/*  Fim do CSS Grid */
+
+#menu-superior{
+	width: 100%;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	letter-spacing: 1px;
+}
+
+#menu-superior ul {
+	height: 110px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#menu-superior li {
+	line-height: 110px;
+	float: right;
+}
+
+#menu-superior li a {
+	display: block;
+	color: white;
+	margin: 0 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#menu-superior li a:hover {
+	transition: all 0.25s ease;
+ 	color: #FB802D;
 }
