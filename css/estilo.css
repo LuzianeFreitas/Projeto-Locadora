@@ -6,9 +6,9 @@
 	font-family: "Open Sans", "Roboto";
 }
 
-body{
-	width: 100%;
-	height:auto;
+html, body {
+    width: 100%;
+    height: 100%;
 }
 
 a{
@@ -78,7 +78,7 @@ a{
 
 #menu-superior{
 	width: 100%;
-	background-color: #333;
+	/*background-color: #333;*/
 	position: fixed;
 	top: 0;
 	letter-spacing: 1px;
@@ -108,4 +108,38 @@ a{
 #menu-superior li a:hover {
 	transition: all 0.25s ease;
  	color: #FB802D;
+}
+
+.bg-principal{
+    height:100%; width:auto;
+    background: url('../img/bg-principal.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.genero-filme-destaque, .titulo-filme-destaque{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #fff;
+    position: absolute;
+    letter-spacing: 0.2px;
+}
+
+.genero-filme-destaque{
+    top:35%;
+    font-size:1.2em;
+}
+
+.titulo-filme-destaque{
+    top:38%;
+    font-size:4em;
+}
+
+.assistir-trailer{
+    height: 40px;
+    border:1px solid red;
+}
+
+.texto{
+    line-height: 40px;
 }
