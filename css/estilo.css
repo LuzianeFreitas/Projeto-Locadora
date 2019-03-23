@@ -14,10 +14,6 @@ html, body {
 a{
 	text-decoration: none;
 }
-#botoes a{
-	text-decoration: none;
-	color: black;
-}
 
 .container{
 	padding-right: 15px;
@@ -232,4 +228,52 @@ a{
 .assistir-card-destaque a:hover{
     transition: all 0.25s ease;
     color:#FB802D;
+}
+/*
+    Formatações contato
+*/
+#conteudo-contato{
+    width: 500px;
+    height: 500px;
+    margin-left: 280px;
+}
+#conteudo-contato h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: center;
+    line-height: 2.1em;
+}
+
+#conteudo-contato label{
+    width: 100px;
+    padding: 3px;
+    display: inline-block;
+}
+
+input[type="text"], select {
+    height: 20px;
+    width: 350px;
+    margin: 5px;
+}
+
+#conteudo-contato textarea{
+    height: 80px;
+    width: 350px;
+    margin: 5px;
+}
+
+input[type="submit"], select{
+    height: 30px;
+    width: 80px;
+    line-height: 2.1em;
+    margin-left: 388px;
+    border: 1px solid #FAFAFA;
+    background-color: #FAFAFA;
+}
+
+input[type="submit"]:hover{
+    color:#FB802D;
+}
+.fundo-contato{
+    background: #fff;
 }
