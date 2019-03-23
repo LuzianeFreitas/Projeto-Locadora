@@ -503,3 +503,27 @@ select{
 hr{
     margin-left: 100px;
 }
+
+/*
+    Formatacoes musica
+*/
+
+.container-inf-musica{
+    height: 200px;
+    margin-left: 100px;
+}
+
+.formato-trilha1{
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 30px;
+    text-align: left;
+}
+
+.formato-inf-musica1{
+    color: #fff;
+}
+
+.posicao-musica{
+    margin-top: 20px;
+}
