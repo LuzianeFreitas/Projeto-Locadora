@@ -25,10 +25,10 @@
             <ul>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="contato.html">Contatos</a></li>
-                <li><a href="#">Trilha Sonora</a></li>
-                <li><a href="#">Trailers</a></li>
-                <li><a href="#">Filmes</a></li>
-                <li><a href="#">Home</a></li>
+                <li><a href="trilha-sonora.html">Trilha Sonora</a></li>
+                <li><a href="trailer.html">Trailers</a></li>
+                <li><a href="todos-filmes.html">Filmes</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li style="float:left"><img src="img/logo.png"></li>
             </ul>
         </div>
@@ -38,10 +38,11 @@
             <div class="col-10">
                 <div class="texto-selecao-genero">Filmes</div>
                 <select class="selecao-filmes">
+                    <option>Romance</option>
                     <option>Todos os Filmes</option>
                     <option>Ficção Científica</option>
                     <option>Aventura</option>
-                    <option>Drama</option>
+                    <option>Terror</option>
                 </select>
                 <div class="volume-button volume-off" onClick="mute_unmute()"></div>
             </div>
@@ -100,6 +101,19 @@
     </section>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript">
+        $('.selecao-filmes').on('change', function() {
+            if(this.value !== "Romance"){
+                if(this.value === "Ficção Científica"){
+                    window.location = "filmes-ficcao.html";
+                }else if(this.value === "Todos os Filmes"){
+                    window.location = "todos-filmes.html";
+                }else if(this.value === "Ação"){
+                    window.location = "filmes-acao.html";
+                }else if(this.value === "Terror"){
+                    window.location = "filmes-terror.html";
+                }
+            }
+        });
         function mute_unmute(){
             $("#trailer-destaque").prop('muted', !$("#trailer-destaque").prop('muted'));
             if($("#trailer-destaque").get(0).muted){
