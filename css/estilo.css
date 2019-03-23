@@ -361,10 +361,6 @@ input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover{
     color:#FB802D;
 }
 
-.fundo-contato{
-    background: #fff;
-}
-
 select{
     height: 20px;
     width: 350px;
