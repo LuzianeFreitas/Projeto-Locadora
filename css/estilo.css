@@ -79,7 +79,7 @@ a{
 #menu-superior{
 	width: 100%;
 	/*background-color: #333;*/
-	position: fixed;
+	/*position: fixed;*/
 	top: 0;
 	letter-spacing: 1px;
 }
@@ -111,7 +111,10 @@ a{
 }
 
 .bg-principal{
-    height:100%; width:auto;
+    position: absolute;
+    top: 0;
+    height:100%; width:100%;
+    z-index: -1;
     background: url('../img/bg-principal.jpg');
     background-size:cover;
     background-repeat: no-repeat;
@@ -121,25 +124,39 @@ a{
     font-family: 'Montserrat';
     font-weight: 400;
     color: #fff;
-    position: absolute;
+    /*position: absolute;*/
     letter-spacing: 0.2px;
 }
 
 .genero-filme-destaque{
-    top:35%;
+    margin-top: 130px;
     font-size:1.2em;
 }
 
 .titulo-filme-destaque{
-    top:38%;
     font-size:4em;
 }
 
-.assistir-trailer{
+.icone-trailer{
+    margin-top: 10px;
+    margin-left: 10px;
     height: 40px;
-    border:1px solid red;
+    float:left;
+    width: 35px;
 }
 
-.texto{
+.texto-assitir-trailer{
     line-height: 40px;
+    float:left;
+}
+
+.texto-assitir-trailer a{
+    font-family: "Roboto";
+    letter-spacing: 0;
+    color: #fff;
+}
+
+.texto-assitir-trailer a:hover {
+	transition: all 0.25s ease;
+ 	color: #FB802D;
 }
