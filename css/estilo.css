@@ -260,44 +260,51 @@ a{
     text-shadow: 1px 1px #4b4b4b;
 }
 
-.card-destaque-1{
-    background-image: url('../img/filmes/star-wars-card.jpg');
+.card-destaque-1, .card-destaque-2, .card-destaque-3, .card-destaque-4, .card-destaque-5, .card-destaque-6, .card-destaque-7, .card-destaque-8, .card-destaque-9, .card-destaque-10{
     background-size: cover;
     background-position: center;
     height: 485px;
     width: 100%;
+}
+
+.card-destaque-1{
+    background-image: url('../img/filmes/star-wars-card.jpg');
 }
 
 .card-destaque-2{
-    background: url('../img/filmes/interestelar-card.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 485px;
-    width: 100%;
+    background-image: url('../img/filmes/interestelar-card.jpg');
 }
 
 .card-destaque-3{
-    background: url('../img/filmes/vingadores-card.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 485px;
-    width: 100%;
+    background-image: url('../img/filmes/vingadores-card.jpg');
 }
 
 .card-destaque-4{
-    background: url('../img/filmes/logan-card.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 485px;
-    width: 100%;
+    background-image: url('../img/filmes/logan-card.jpg');
 }
 
 .card-destaque-5{
-    background: url('../img/filmes/star-trek-card.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 485px;
-    width: 100%;
+    background-image: url('../img/filmes/star-trek-card.jpg');
+}
+
+.card-destaque-6{
+    background-image: url('../img/filmes/piratas-caribe-card.jpg');
+}
+
+.card-destaque-7{
+    background-image: url('../img/filmes/a-proposta-card.jpg');
+}
+
+.card-destaque-8{
+    background-image: url('../img/filmes/barraca-beijo-card.jpg');
+}
+
+.card-destaque-9{
+    background-image: url('../img/filmes/a-freira-card.jpg');
+}
+
+.card-destaque-10{
+    background-image: url('../img/filmes/maligno-card.jpg');
 }
 /* Fim da página principal */
 
@@ -415,7 +422,7 @@ input[type="usuario"],input[type="password"], select {
 }
 
 .radio{
-   margin-left: 40px; 
+   margin-left: 40px;
 }
 
 input[type="submit"], select, input[type="reset"], select,input[type="button"], select{
