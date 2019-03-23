@@ -1,14 +1,20 @@
 /*
 Formatação Formulario
 */
+*{
+	font-family: "Open Sans", "Roboto";
+}
 body{
-	background: #F6F0F0;
+    z-index: -1;
+    background:#040312 url('../img/bg-principal.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 #container{
 	width: 400px;
 	height: 300px;
-	background-color: rgba(255,255,255,0.3);
+	background-color: rgba(0,0,0,0.3);
 	border-radius: 10px;
 	margin: 0 auto;
 	margin-top: 200px;
@@ -41,7 +47,18 @@ input.submit{
 	height: 45px;
 	width: 90%;
 }
+.conteudo-formulario-autenticacao a{
+	padding: 5px 20px;
+	height: 45px;
+	color: #fff;
+	text-decoration: none;
+}
 
-a:hover{
-	color: #03136A;
+.conteudo-formulario-autenticacao a:hover{
+	transition: all 0.25s ease;
+ 	color: #FB802D;
+}
+
+.conteudo-formulario-autenticacao input.submit:hover{
+	color: #FB802D;
 }
