@@ -26,19 +26,6 @@ a{
 .container{
     width: 85%;
 }
-/*
-@media only screen and (min-width: 1200px) {
-	.container {
-	    width: 1170px;
-	}
-}
-
-@media only screen and (min-width: 992px) {
-	.container {
-		width: 970px;
-	}
-}
-*/
 /*  CSS Grid */
 .wrapper{
 	display: grid;
@@ -164,7 +151,7 @@ a{
 }
 
 #todos-filmes{
-    margin-top: 400px;
+    margin-top: 360px;
     height: 800px;
 }
 
@@ -195,10 +182,11 @@ a{
 .card-descricao{
     position: absolute;
     bottom: 0;
+    height: 80px;
     width: 100%;
     padding: 0 15px;
     text-align: center;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 }
 
 .titulo-card-destaque{
@@ -211,23 +199,106 @@ a{
 }
 
 .card-destaque-1{
-    background: url('../img/filmes/star-wars-card.jpg');
+    background-image: url('../img/filmes/star-wars-card.jpg');
     background-size: cover;
     background-position: center;
     height: 485px;
     width: 100%;
 }
 
-.assistir-card-destaque a{
-    font-size: 14px;
-    font-family: "Roboto";
-    font-weight: 100;
-    color:#fff;
+.card-destaque-2{
+    background: url('../img/filmes/interestelar-card.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 485px;
+    width: 100%;
 }
 
-.assistir-card-destaque a:hover{
+.card-destaque-3{
+    background: url('../img/filmes/vingadores-card.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 485px;
+    width: 100%;
+}
+
+.card-destaque-4{
+    background: url('../img/filmes/logan-card.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 485px;
+    width: 100%;
+}
+
+.card-destaque-5{
+    background: url('../img/filmes/star-trek-card.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 485px;
+    width: 100%;
+}
+
+#rodape{
+    padding: 40px 0 30px 0;
+    background: #000;
+    text-align: center;
+}
+
+#rodape .titulo-secao{
+    text-align: left;
+}
+
+#rodape a{
+    color: #a9a9a9;
+}
+
+#rodape a:hover{
     transition: all 0.25s ease;
-    color:#FB802D;
+ 	color: #FB802D;
+}
+
+#rodape .titulo-secao span{
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+}
+
+.item-menu-rodape{
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.text-sobre-rodape{
+    color: #a9a9a9;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+#rodape .linha-abaixo-titulo-secao{
+    margin: 10px 0 20px 0;
+    background: #FB802D;
+    height: 3px;
+    width: 80px;
+}
+
+.linha-creditos{
+    height: 1px;
+    width: 100%;
+    background: #6f6f6f;
+    margin: 40px auto 30px auto;
+}
+
+.creditos{
+    color: #a9a9a9;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    text-align: center;
 }
 /*
     Formatações contato
