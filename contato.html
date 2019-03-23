@@ -9,22 +9,22 @@
     <link rel="icon" href="img/favicon.png">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500|Open+Sans:300,400,600|Roboto:100,300,400,500" rel="stylesheet">
     <!-- CSS Base para todas as páginas -->
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 
-<body class="fundo-contato">
+<body>
 
     <div id="menu-superior">
         <div class="container">
             <ul>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="contato.html">Contatos</a></li>
                 <li><a href="#">Trilha Sonora</a></li>
-                <li><a href="#">Trailers</a></li>
+                <li><a href="trailer.html">Trailers</a></li>
                 <li><a href="#">Filmes</a></li>
-                <li><a href="#">Home</a></li>
+                <li><a href="principal.html">Home</a></li>
                 <li style="float:left"><img src="img/logo.png"></li>
             </ul>
         </div>
@@ -80,13 +80,47 @@
                     <textarea name="texto" id="mensagem"></textarea>
                 </div>
 
-                <div class="col-10">
-                    <input type="submit" value="Enviar">
+                <div id="teste" class="col-10">
+                    <span>
+                       <input type="submit" value="Enviar"> 
+                    </span>
+                    
                 </div>
 
             </div>
             
         </form>
     </div>
+
+    <section id="rodape">
+        <div class="container">
+            <div class="wrapper">
+                <div class="col-2">
+                    <div class="titulo-secao col-10">
+                        <span>MENU</span>
+                    </div>
+                    <div class="linha-abaixo-titulo-secao col-10"></div>
+                    <div class="col-10 item-menu-rodape"><a href="#">Home</a></div>
+                    <div class="col-10 item-menu-rodape"><a href="#">Filmes</a></div>
+                    <div class="col-10 item-menu-rodape"><a href="#">Trailers</a></div>
+                    <div class="col-10 item-menu-rodape"><a href="#">Trilha Sonora</a></div>
+                    <div class="col-10 item-menu-rodape"><a href="#">Contato</a></div>
+                    <div class="col-10 item-menu-rodape"><a href="#">Sobre</a></div>
+                </div>
+                <div class="col-8">
+                    <div class="titulo-secao col-10">
+                        <span>SOBRE O APEX</span>
+                    </div>
+                    <div class="linha-abaixo-titulo-secao col-10" style="width: 180px;"></div>
+                    <div class="col-10 text-sobre-rodape">R. Washington Luís, Jd. Milenar 450</div>
+                    <div class="col-10 text-sobre-rodape" style="margin-bottom:13px;">Poços de Caldas, MG</div>
+                    <div class="col-10 text-sobre-rodape">contato@apex-cinema.com</div>
+                    <div class="col-10 text-sobre-rodape">(75) 3845-5789</div>
+                </div>
+                <div class="linha-creditos col-10"></div>
+                <div class="creditos col-10">© Rodrigo Araújo Marinho Franco, Luziane Lourdes Freitas - Instituto Federal do Sul de Minas 2019</div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

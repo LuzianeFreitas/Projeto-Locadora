@@ -414,29 +414,22 @@ input[type="usuario"],input[type="password"], select {
     margin: 5px;
 }
 
-input[type="submit"], select{
+.radio{
+   margin-left: 40px; 
+}
+
+input[type="submit"], select, input[type="reset"], select,input[type="button"], select{
     height: 30px;
     width: 80px;
     line-height: 2.1em;
-    margin-left: 388px;
+    margin-left: 40px;
     border: 1px solid #FAFAFA;
     background-color: #FAFAFA;
+    display: inline-block;
 }
 
-input[type="submit"], select{
-    height: 30px;
-    width: 80px;
-    line-height: 2.1em;
-    margin-left: 388px;
-    border: 1px solid #FAFAFA;
-    background-color: #FAFAFA;
-}
-
-input[type="submit"]:hover,input[type="reset"]:hover{
+input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover{
     color:#FB802D;
-}
-.fundo-contato{
-    background: #fff;
 }
 
 select{
@@ -445,11 +438,61 @@ select{
     margin: 5px;
 }
 
-/*#formatacao-botao input[type="reset"], select{
-    height: 30px;
-    width: 80px;
-    line-height: 2.1em;
-    margin-left: 188px;
-    border: 1px solid #FAFAFA;
-    background-color: #FAFAFA;
-}*/
+#teste{
+    padding-left: 336px;
+    /*text-align: right;*/
+}
+
+/*
+    Formatações trailers
+*/
+.titulo-geral{
+    color: #fff;
+    font-size: 2em;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+.conteiner-geral{
+    margin: 0 auto;
+}
+.container-trailer{
+    width: 600px;
+    height: 366px;
+    margin-left: 100px;
+}
+
+.conteiner-informacoes-trailer{
+    height: 200px;
+}
+
+.formato-titulo-trailer{
+    color: #fff;
+    font-size: 2em;
+    line-height: 30px;
+    margin-left: 100px;
+}
+
+.formato-inf{
+    color: #fff;
+    font-size: 1em;
+    line-height: 30px;
+    margin-left: 100px;
+}
+
+.formato-inf-filme{
+    color: #fff;
+    margin-left: 100px;
+}
+
+.formato-inf-class{
+    color: #fff;
+    font-size: 0.8em;
+    line-height: 18px;
+    margin-left: 100px;
+    text-indent: justify;
+}
+hr{
+    margin-left: 100px;
+}
