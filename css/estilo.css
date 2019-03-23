@@ -343,27 +343,24 @@ input[type="usuario"],input[type="password"], select {
     margin: 5px;
 }
 
-input[type="submit"], select{
+.radio{
+   margin-left: 40px; 
+}
+
+input[type="submit"], select, input[type="reset"], select,input[type="button"], select{
     height: 30px;
     width: 80px;
     line-height: 2.1em;
-    margin-left: 388px;
+    margin-left: 40px;
     border: 1px solid #FAFAFA;
     background-color: #FAFAFA;
+    display: inline-block;
 }
 
-input[type="submit"], select{
-    height: 30px;
-    width: 80px;
-    line-height: 2.1em;
-    margin-left: 388px;
-    border: 1px solid #FAFAFA;
-    background-color: #FAFAFA;
-}
-
-input[type="submit"]:hover,input[type="reset"]:hover{
+input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover{
     color:#FB802D;
 }
+
 .fundo-contato{
     background: #fff;
 }
@@ -374,11 +371,6 @@ select{
     margin: 5px;
 }
 
-/*#formatacao-botao input[type="reset"], select{
-    height: 30px;
-    width: 80px;
-    line-height: 2.1em;
-    margin-left: 188px;
-    border: 1px solid #FAFAFA;
-    background-color: #FAFAFA;
-}*/
+#teste{
+    position: relative;
+}
