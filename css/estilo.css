@@ -26,6 +26,11 @@ a{
 	margin-right: auto;
 	height: auto;
 }
+
+.container{
+    width: 85%;
+}
+/*
 @media only screen and (min-width: 1200px) {
 	.container {
 	    width: 1170px;
@@ -37,6 +42,7 @@ a{
 		width: 970px;
 	}
 }
+*/
 /*  CSS Grid */
 .wrapper{
 	display: grid;
@@ -159,4 +165,71 @@ a{
 .texto-assitir-trailer a:hover {
 	transition: all 0.25s ease;
  	color: #FB802D;
+}
+
+#todos-filmes{
+    margin-top: 400px;
+    height: 800px;
+}
+
+.titulo-secao{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.linha-abaixo-titulo-secao{
+    margin: 20px auto;
+    background: #FB802D;
+    height: 5px;
+    width: 80px;
+}
+
+.card-filme{
+    position: relative;
+}
+
+.card-filme:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.card-descricao{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo-card-destaque{
+    font-size: 22px;
+    font-family: "Roboto";
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.2px;
+    text-shadow: 1px 1px #4b4b4b;
+}
+
+.card-destaque-1{
+    background: url('../img/filmes/star-wars-card.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 485px;
+    width: 100%;
+}
+
+.assistir-card-destaque a{
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 100;
+    color:#fff;
+}
+
+.assistir-card-destaque a:hover{
+    transition: all 0.25s ease;
+    color:#FB802D;
 }
