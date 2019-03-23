@@ -301,21 +301,26 @@ a{
     text-align: center;
 }
 /*
-    Formatações contato
+    Formatações conteudo
 */
-#conteudo-contato{
+.conteudo{
     width: 500px;
-    height: 500px;
+    height: 1000px;
     margin-left: 280px;
 }
-#conteudo-contato h2{
+.conteudo h2{
     padding-top: 10px;
     padding-bottom: 10px;
     padding: center;
     line-height: 2.1em;
 }
 
-#conteudo-contato label{
+.conteudo h3{
+    padding-top: 8px;
+    padding-bottom: 0.5px;
+    line-height: 1em;
+}
+.conteudo label{
     width: 100px;
     padding: 3px;
     display: inline-block;
@@ -326,8 +331,13 @@ input[type="text"], select {
     width: 350px;
     margin: 5px;
 }
+input[type="usuario"],input[type="password"], select {
+    height: 20px;
+    width: 350px;
+    margin: 5px;
+}
 
-#conteudo-contato textarea{
+.conteudo textarea{
     height: 80px;
     width: 350px;
     margin: 5px;
@@ -342,9 +352,33 @@ input[type="submit"], select{
     background-color: #FAFAFA;
 }
 
-input[type="submit"]:hover{
+input[type="submit"], select{
+    height: 30px;
+    width: 80px;
+    line-height: 2.1em;
+    margin-left: 388px;
+    border: 1px solid #FAFAFA;
+    background-color: #FAFAFA;
+}
+
+input[type="submit"]:hover,input[type="reset"]:hover{
     color:#FB802D;
 }
 .fundo-contato{
     background: #fff;
 }
+
+select{
+    height: 20px;
+    width: 350px;
+    margin: 5px;
+}
+
+/*#formatacao-botao input[type="reset"], select{
+    height: 30px;
+    width: 80px;
+    line-height: 2.1em;
+    margin-left: 188px;
+    border: 1px solid #FAFAFA;
+    background-color: #FAFAFA;
+}*/

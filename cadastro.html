@@ -16,37 +16,71 @@
 
 <body>
 
-    <div id="conteudo-principal-cadastro" class="container">
+    <div id="menu-superior">
+        <div class="container">
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+                <li><a href="#">Trilha Sonora</a></li>
+                <li><a href="#">Trailers</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#">Home</a></li>
+                <li style="float:left"><img src="img/logo.png"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="conteudo">
         <form>
             <div class="wrapper">
                 <div class="col-10">
                     <h2>Cadastro de usuários</h2>
                 </div>
-                <div class="col-1">
-                    <label for="nome">Nome:</label>
+                <div class="col-1 input">
+                    <span>
+                        <label for="nome">Nome</label>
+                    </span>
                 </div>
                 <div class="col-9">
                     <input type="text" name="nome" id="nome">
                 </div>
-                <div class="col-1">
-                    <label for="endereco">Endereço:</label>
+                <div class="col-1 input">
+                    <span>
+                        <label for="endereco">Endereço</label>
+                    </span>
                 </div>
                 <div class="col-9">
                     <input type="text" name="endereco" id="endereco">
                 </div>
 
-                <div>
-                    <label for="email">E-mail:</label>
+                <div class="col-1 input">
+                    <span>
+                       <label for="email">E-mail</label>
+                    </span>
+                    
+                </div>
+
+                <div class="col-9">
                     <input type="text" name="email" id="email">
                 </div>
 
-                <div>
-                    <label for="cidade">Cidade:</label>
+                <div class="col-1 input">
+                    <span>
+                        <label for="cidade">Cidade</label>
+                    </span>
+                    
+                </div>
+
+                <div class="col-9">
                     <input type="text" name="cidade" id="cidade">
                 </div>
 
-                <div>
-                    Estado:
+                <div class="col-1 input">
+                    <span>
+                        <label for="estado">Estado</label>
+                    </span>
+                </div>
+                <div class="col-9">
                     <select>
                           <option value="saopaulo">São Paulo</option>
                           <option value="minasgerais">Minas Gerais</option>
@@ -55,19 +89,21 @@
                     </select>
                 </div>
 
-                <div>
-                    Sexo:
-                    <label>
-                        <input class="radio" type="radio" name="masculino" id="masculino">Masculino
-                    </label>
-
-                    <label>
-                        <input class="radio" type="radio" name="feminino" id="feminino">Feminino
-                    </label>
+                <div class="col-1 input">
+                    <span>
+                        <label for="sexo">Sexo</label>
+                    </span>
+                </div>
+                <div class="col-9">
+                    <input class="radio" type="radio" name="masculino" id="sexo">Masculino
+                    <input class="radio" type="radio" name="feminino" id="sexo">Feminino
                 </div>
 
-                <div>
-                    Filmes que você mais gosta:
+                <div class="col-10">
+                    <h3>Filmes que você mais gosta:</h3>
+                </div>
+
+                <div class="col-10">
                     <br>
                     <input type="checkbox" name="acao" value="acao" id="checkbox_acao">
                     <label for="checkbox_acao">Ação</label>
@@ -91,25 +127,40 @@
                     <label for="checkbox_terror">Terror</label>
 
                 </div>
+            </div>
 
-                <div>
-                    <label for="usuario">Usuário:</label>
+            <div class="wrapper">
+                <div class="col-1 input">
+                    <span>
+                        <label for="usuario">Usuário</label>
+                    </span>
+                </div>
+
+                <div class="col-9">
                     <input type="usuario" name="usuario"  id="usuario">
                 </div>
 
-                <div>
-                    <label for="senha">Senha:</label>
-                    <input type="password" name="senha" id="senha">
+                <div class="col-1 input">
+                    <span>
+                        <label for="senha">Senha</label>
+                    </span>
                 </div>
 
-                <div>
+                <div class="col-9">
+                    <input type="password" name="senha" id="senha">
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div id="formatacao-botao" class="col-10 formatacao-botao">
                     <br>
-                    <input type="reset" value="Limpar">
-                    <input type="submit" value="Enviar">
-                    <!-- Botao cancelar não esta funcionando -->
                     <a href="">
                         <button>Cancelar</button>
                     </a>
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+                    <!-- Botao cancelar não esta funcionando -->
+                    
                 </div>
 
             </div>
