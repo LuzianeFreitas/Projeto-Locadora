@@ -1,4 +1,4 @@
-/* Formatação link botão */
+/*  Estilos globais */
 *, :after, :before {
     box-sizing: border-box;
 	margin: 0;
@@ -26,7 +26,7 @@ a{
 .container{
     width: 85%;
 }
-/*  CSS Grid */
+
 .wrapper{
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
@@ -63,12 +63,76 @@ a{
 .col-10{
 	grid-column: span 10;
 }
-/*  Fim do CSS Grid */
+
+#rodape{
+    padding: 40px 0 30px 0;
+    background: #000;
+    text-align: center;
+}
+
+#rodape .titulo-secao{
+    text-align: left;
+}
+
+#rodape a{
+    color: #a9a9a9;
+}
+
+#rodape a:hover{
+    transition: all 0.25s ease;
+ 	color: #FB802D;
+}
+
+#rodape .titulo-secao span{
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+}
+
+.item-menu-rodape{
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.text-sobre-rodape{
+    color: #a9a9a9;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+#rodape .linha-abaixo-titulo-secao{
+    margin: 10px 0 20px 0;
+    background: #FB802D;
+    height: 3px;
+    width: 80px;
+}
+
+.linha-creditos{
+    height: 1px;
+    width: 100%;
+    background: #6f6f6f;
+    margin: 40px auto 30px auto;
+}
+
+.creditos{
+    color: #a9a9a9;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+/*  Estilos globais */
+
+/* Página Principal */
 
 #menu-superior{
 	width: 100%;
-	/*background-color: #333;*/
-	/*position: fixed;*/
 	top: 0;
 	letter-spacing: 1px;
 }
@@ -113,7 +177,6 @@ a{
     font-family: 'Montserrat';
     font-weight: 400;
     color: #fff;
-    /*position: absolute;*/
     letter-spacing: 0.2px;
 }
 
@@ -186,7 +249,6 @@ a{
     width: 100%;
     padding: 0 15px;
     text-align: center;
-    /*margin-bottom: 20px;*/
 }
 
 .titulo-card-destaque{
@@ -237,69 +299,78 @@ a{
     height: 485px;
     width: 100%;
 }
+/* Fim da página principal */
 
-#rodape{
-    padding: 40px 0 30px 0;
-    background: #000;
-    text-align: center;
+/* Página todos os filmes */
+
+#trailer-destaque{
+    position: absolute;
+    top: 0;
+    height:auto; width:100%;
+    z-index: -1;
 }
 
-#rodape .titulo-secao{
-    text-align: left;
+video::-webkit-media-controls {
+  display: none;
 }
 
-#rodape a{
-    color: #a9a9a9;
+.volume-button{
+    float: right;
+    border: 1.2px solid rgba(255,255,255,.5);
+    border-radius: 50%;
 }
 
-#rodape a:hover{
-    transition: all 0.25s ease;
- 	color: #FB802D;
+.volume-button:hover{
+    cursor: pointer;
+    border: 1.2px solid rgba(255,255,255,1);
 }
 
-#rodape .titulo-secao span{
-    color: #fff;
-    font-family: "Montserrat";
+.volume-off{
+    background-image: url('../img/volume-off.png');
+    background-size:contain;
+    height: 40px; width: 40px;
+}
+
+.volume-on{
+    background-image: url('../img/volume-on.png');
+    background-size:contain;
+    height: 40px; width: 40px;
+}
+
+.titulo-trailer-destaque{
+    margin-top:380px;
+    font-family: 'Montserrat';
     font-weight: 400;
-    font-size: 20px;
+    font-size: 2.5em;
+    color: #fff;
     letter-spacing: 0.2px;
 }
 
-.item-menu-rodape{
-    text-align: left;
-    margin-bottom: 5px;
-    font-size: 14px;
+.texto-selecao-genero, .selecao-filmes{
+    float: left;
 }
 
-.text-sobre-rodape{
-    color: #a9a9a9;
-    font-size: 14px;
-    margin-bottom: 5px;
-    text-align: justify;
-}
-
-#rodape .linha-abaixo-titulo-secao{
-    margin: 10px 0 20px 0;
-    background: #FB802D;
-    height: 3px;
-    width: 80px;
-}
-
-.linha-creditos{
-    height: 1px;
-    width: 100%;
-    background: #6f6f6f;
-    margin: 40px auto 30px auto;
-}
-
-.creditos{
-    color: #a9a9a9;
-    font-family: "Roboto";
-    font-weight: 300;
-    font-size: 14px;
+.texto-selecao-genero{
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 1.4em;
+    color: #fff;
     letter-spacing: 0.2px;
-    text-align: center;
+    margin-right: 30px;
 }
+
+.selecao-filmes{
+    margin-top: 15px;
+    background: #000;
+    font-size: 0.9em;
+    height: 35px;
+    width: 160px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* Fim das página todos os filmes */
 /*
     Formatações conteudo
 */

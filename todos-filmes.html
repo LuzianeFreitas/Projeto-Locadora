@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Página Principal</title>
+    <!-- Ícone do site -->
+    <link rel="icon" href="img/favicon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500|Open+Sans:300,400,600|Roboto:100,300,400,500" rel="stylesheet">
+    <!-- CSS Base para todas as páginas -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <video id="trailer-destaque" playsinline autoplay muted>
+        <source src="videos/vingadores.mp4">
+        Your browser does not support the video tag.
+    </video>
+    <!--<div class="bg-principal"></div>-->
+    <div id="menu-superior">
+        <div class="container">
+            <ul>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+                <li><a href="#">Trilha Sonora</a></li>
+                <li><a href="#">Trailers</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#">Home</a></li>
+                <li style="float:left"><img src="img/logo.png"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            <div class="col-10">
+                <div class="texto-selecao-genero">Filmes</div>
+                <select class="selecao-filmes">
+                    <option>Todos os Filmes</option>
+                    <option>Ficção Científica</option>
+                    <option>Aventura</option>
+                    <option>Drama</option>
+                </select>
+                <div class="volume-button volume-off" onClick="mute_unmute()"></div>
+            </div>
+            <div class="titulo-trailer-destaque col-10">Vingadores: Guerra Infinita</div>
+        </div>
+    </div>
+    <section id="todos-filmes" style="margin-top: 100px;">
+        <div class="container">
+            <div class="wrapper">
+                <div class="titulo-secao col-10">
+                    <span>TODOS OS FILMES</span>
+                </div>
+                <div class="linha-abaixo-titulo-secao col-10"></div>
+                <div class="card-destaque-1 card-filme col-2">
+                    <div class="card-descricao">
+                        <div class="titulo-card-destaque">Star Wars: Os Últimos Jedi</div>
+                    </div>
+                </div>
+                <div class="card-destaque-2 card-filme col-2">
+                    <div class="card-descricao">
+                        <div class="titulo-card-destaque">Interestelar</div>
+                    </div>
+                </div>
+                <div class="card-destaque-3 card-filme col-2">
+                    <div class="card-descricao">
+                        <div class="titulo-card-destaque">Vingadores: Guerra Infinita</div>
+                    </div>
+                </div>
+                <div class="card-destaque-4 card-filme col-2">
+                    <div class="card-descricao">
+                        <div class="titulo-card-destaque">Logan</div>
+                    </div>
+                </div>
+                <div class="card-destaque-5 card-filme col-2">
+                    <div class="card-descricao">
+                        <div class="titulo-card-destaque">Star Trek: Além da Escuridão</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="rodape">
+        <div class="container">
+            <div class="wrapper">
+                <div class="col-2">
+                    <div class="titulo-secao col-10">
+                        <span>MENU</span>
+                    </div>
+                    <div class="linha-abaixo-titulo-secao col-10"></div>
+                    <div class="col-10 item-menu-rodape"><a href="#">Home</a></div>
+                    <div class="col-10 item-menu-rodape"><a href="#">Filmes</a></div>
+                    <div class="col-10 item-menu-rodape"><a href="#">Trailers</a></div>
+                    <div class="col-10 item-menu-rodape"><a href="#">Trilha Sonora</a></div>
+                    <div class="col-10 item-menu-rodape"><a href="#">Contato</a></div>
+                    <div class="col-10 item-menu-rodape"><a href="#">Sobre</a></div>
+                </div>
+                <div class="col-8">
+                    <div class="titulo-secao col-10">
+                        <span>SOBRE O APEX</span>
+                    </div>
+                    <div class="linha-abaixo-titulo-secao col-10" style="width: 180px;"></div>
+                    <div class="col-10 text-sobre-rodape">R. Washington Luís, Jd. Milenar 450</div>
+                    <div class="col-10 text-sobre-rodape" style="margin-bottom:13px;">Poços de Caldas, MG</div>
+                    <div class="col-10 text-sobre-rodape">contato@apex-cinema.com</div>
+                    <div class="col-10 text-sobre-rodape">(75) 3845-5789</div>
+                </div>
+                <div class="linha-creditos col-10"></div>
+                <div class="creditos col-10">© Rodrigo Araújo Marinho Franco, Luziane Lourdes Freitas - Instituto Federal do Sul de Minas 2019</div>
+            </div>
+        </div>
+    </section>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function mute_unmute(){
+            $("#trailer-destaque").prop('muted', !$("#trailer-destaque").prop('muted'));
+            if($("#trailer-destaque").get(0).muted){
+                $(".volume-button").removeClass("volume-on").addClass("volume-off");
+            }else{
+                $(".volume-button").removeClass("volume-off").addClass("volume-on");
+            }
+
+        }
+    </script>
+</body>
+</html>
