@@ -372,5 +372,6 @@ select{
 }
 
 #teste{
-    position: relative;
+    padding-left: 336px;
+    /*text-align: right;*/
 }
