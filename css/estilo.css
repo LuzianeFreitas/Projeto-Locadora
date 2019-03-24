@@ -378,6 +378,42 @@ video::-webkit-media-controls {
 }
 
 /* Fim das página todos os filmes */
+
+/* Páginas com detalhes de um filme */
+
+#detalhes-filme{
+    margin: 50px 0;
+}
+
+.descricao-filme{
+    margin-left: 50px;
+}
+
+.descricao-filme .wrapper div{
+    font-family: "Roboto";
+    font-weight: 300;
+    text-align: justify;
+    margin: 5px 0;
+}
+
+.titulo-filme-descricao{
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.elemento-descricao{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+#detalhes-filme .card-filme:hover{
+    cursor: default;
+    opacity: 1;
+}
+
+/* Fim páginas com detalhes de um filme */
+
 /*
     Formatações conteudo
 */
