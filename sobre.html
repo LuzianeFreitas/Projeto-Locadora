@@ -4,18 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Página Principal</title>
+    <title>Apex Cinema - Sobre</title>
     <!-- Ícone do site -->
     <link rel="icon" href="img/favicon.png">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500|Open+Sans:300,400,600|Roboto:100,300,400,500" rel="stylesheet">
     <!-- CSS Base para todas as páginas -->
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
-    <div id="menu-superior">
+
+    <div id="menu-superior" style="background: #000;">
         <div class="container">
             <ul>
                 <li><a href="sobre.html">Sobre</a></li>
@@ -29,11 +30,56 @@
         </div>
     </div>
 
-    <div id="conteudo-principal-sobre">
-
-        <div>
-            <h2>Sobre</h2>
+    <div class="wrapper">
+        <div class="col-2 container-img-sobre">
+            <img src="img/img2.jpg" width="150" height="150">
         </div>
+        <div class="col-8 inf-sobre">
+            <p><strong> Nome:</strong> Luziane de Lourdes Freitas</p>
+            <p><strong>Telefone:</strong> (35) 99999-9999</p>
+            <p><strong>E-mail:</strong> luziane.freitas@alunos.ifsuldeminas.edu.br</p>
+        </div> 
+
+        <div class="col-2 container-img-sobre">
+            <img src="img/img1.jpg" width="150" height="150">
+        </div>
+        <div class="col-8 inf-sobre">
+            <p><strong> Nome:</strong> Rodrigo Araújo Marinho Franco</p>
+            <p><strong>Telefone:</strong> (35) 99999-9999</p>
+            <p><strong>E-mail:</strong> rodrigo.franco@alunos.ifsuldeminas.edu.br</p>
+        </div>       
     </div>
+    
+
+    <section id="rodape">
+        <div class="container">
+            <div class="wrapper">
+                <div class="col-2">
+                    <div class="titulo-secao col-10">
+                        <span>MENU</span>
+                    </div>
+                    <div class="linha-abaixo-titulo-secao col-10"></div>
+                    <div class="col-10 item-menu-rodape"><a href="principal.html">Home</a></div>
+                    <div class="col-10 item-menu-rodape"><a href="todos-filmes.html">Filmes</a></div>
+                    <div class="col-10 item-menu-rodape"><a href="trailer.html">Trailers</a></div>
+                    <div class="col-10 item-menu-rodape"><a href="trilha-sonora.html">Trilha Sonora</a></div>
+                    <div class="col-10 item-menu-rodape"><a href="contato.html">Contato</a></div>
+                    <div class="col-10 item-menu-rodape"><a href="sobre.html">Sobre</a></div>
+                </div>
+                <div class="col-8">
+                    <div class="titulo-secao col-10">
+                        <span>SOBRE O APEX</span>
+                    </div>
+                    <div class="linha-abaixo-titulo-secao col-10" style="width: 180px;"></div>
+                    <div class="col-10 text-sobre-rodape">R. Washington Luís, Jd. Milenar 450</div>
+                    <div class="col-10 text-sobre-rodape" style="margin-bottom:13px;">Poços de Caldas, MG</div>
+                    <div class="col-10 text-sobre-rodape">contato@apex-cinema.com</div>
+                    <div class="col-10 text-sobre-rodape">(75) 3845-5789</div>
+                </div>
+                <div class="linha-creditos col-10"></div>
+                <div class="creditos col-10">© Rodrigo Araújo Marinho Franco, Luziane Lourdes Freitas - Instituto Federal do Sul de Minas 2019</div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
